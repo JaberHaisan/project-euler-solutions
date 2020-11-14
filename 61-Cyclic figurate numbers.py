@@ -1,3 +1,5 @@
+# https://projecteuler.net/problem=61
+
 triangle_number = lambda n: int(0.5 * n * (n + 1))
 square_number = lambda n: n ** 2
 pentagonal_number = lambda n: int(0.5 * n * (3 * n - 1))
