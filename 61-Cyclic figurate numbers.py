@@ -51,5 +51,7 @@ def make_chain(num, a_list, length, chain=None):
 		return None
 
 num_types = [triangle_numbers, square_numbers, pentagonal_numbers, hexagonal_numbers, heptagonal_numbers]
+
+# Start chain from octogonal numbers as they have the fewest members.
 for octagonal_num in octagonal_numbers:	
 	make_chain(octagonal_num, num_types, length=6)
