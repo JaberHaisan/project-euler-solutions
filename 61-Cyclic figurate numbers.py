@@ -24,7 +24,7 @@ def prefix_dict(iterable, length=2):
 def make_chain(num, a_list, length, chain=None):
 	"""Tries to make a chain of numbers such that numbers form a circle according
 	to the question's rules."""
-	check = num[-2:]
+	suffix = num[-2:]
 	
 	# Initializes chain during first iteration.
 	if chain == None:
@@ -37,9 +37,9 @@ def make_chain(num, a_list, length, chain=None):
 		return chain
 		
 	for num_type in a_list:
-		req = prefix_dict(num_type)
-		if check in req:
-			for next_num in req[check]:
+		prefixes = prefix_dict(num_type)
+		if suffix in prefixes:
+			for next_num in prefixes[suffix]:
 				# Copies list and chain so that their modification does not affect the other nums to be checked.
 				list_copy = a_list[:]
 				list_copy.remove(num_type)
