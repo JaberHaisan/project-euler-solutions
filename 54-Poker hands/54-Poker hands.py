@@ -1,6 +1,6 @@
-from collections import Counter
+# https://projecteuler.net/problem=54
 
-test = ["TH", "JC", "QH", "AH", "KH"]
+from collections import Counter
 
 class Hand():
 	
