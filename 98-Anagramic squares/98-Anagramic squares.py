@@ -49,6 +49,7 @@ for letters, anagrams in anagrams.items():
 		for i in range(length):
 			ordinal = ord(first[i])
 			square_digit = square[i]
+			# Stop if letters don't have unique values.
 			if square_digit in num_map.values():
 				break
 			num_map[ordinal] = square_digit
