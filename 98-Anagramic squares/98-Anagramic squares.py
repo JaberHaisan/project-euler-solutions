@@ -59,7 +59,6 @@ for letters, anagrams in anagrams.items():
 				new_num = word.translate(num_map)
 				anagram_squares.append(int(new_num))
 				if new_num not in squares_set or new_num.startswith("0"):
-					anagram_squares.clear()
 					break
 			else:
 				all_angram_squares.extend(anagram_squares)
