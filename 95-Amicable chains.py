@@ -1,3 +1,5 @@
+# https://projecteuler.net/problem=95
+
 from itertools import compress
 from math import floor, sqrt
 
