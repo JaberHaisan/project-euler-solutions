@@ -10,7 +10,10 @@ maximum_perimeter = 1_500_000
 
 perimeter_dict = {}
 
-# This uses Euclid's formula for generating pythagorean triplets.
+# This uses Euclid's formula for generating pythagorean triplets. The formula
+# generates all primitive triplets but misses some non-primitive triplets 
+# so only primitive triplets are generated using it and the non-primitive
+# ones are generated from the primitive ones.
 for m in range(1, maximum_perimeter // 2):
 	print(m)
 	for n in range(1, m):
