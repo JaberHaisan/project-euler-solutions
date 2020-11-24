@@ -14,10 +14,15 @@ perimeter_dict = {}
 for m in range(1, maximum_perimeter // 2):
 	print(m)
 	for n in range(1, m):
+		
 		b = 2 * m * n
 		if b > maximum_perimeter:
 			break
-		if gcd(m, n) == 1 and ((m % 2 != 0 and n % 2 == 0) or (m % 2 == 0 and n % 2 != 0)):
+			
+		# To generate only primitive pythagorean triplets m and n have to be coprime
+		# and either m should be even and n odd or vice versa.
+		# Sum of an odd number and an even number is always odd. 
+		if gcd(m, n) == 1 and (m + n) % 2 != 0:
 			a = pow(m, 2) - pow(n, 2)
 			c = pow(m, 2) + pow(n, 2)
 			
