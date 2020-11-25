@@ -42,7 +42,7 @@ for i in range(2, 1_000_000):
 	sum_set = set()
 	n = i
 	while True:
-		# dict.setdefault always evaluates alternate result if called (which 
+		# dict.setdefault always evaluates the alternate result if called (which 
 		# slows down the program significantly) even if it's not needed hence it is kept in the else loop 
 		# so it only gets called in the case that n doesn't exist in dict to both set the value and
 		# get the evaluated result at the same time.
